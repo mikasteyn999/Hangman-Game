@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Hangman Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hangman is a classic word guessing game. This app is a version of the game that you can play in your web browser.
 
-## Available Scripts
+## Game Rules
 
-In the project directory, you can run:
+1. The game chooses a random word, and you need to guess it. The word is represented by a row of dashes, giving the number of letters.
+2. You guess one letter at a time. If the guessed letter is in the word, it replaces the dash(es) in the corresponding position(s) of the word.
+3. If the guessed letter is not in the word, a part of the hangman is drawn. You have up to 10 incorrect guesses before the hangman is complete, and the game is lost.
+4. The game continues until you either guess the word (win) or the hangman is fully drawn (lose).
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install and run this app on your local machine, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have Node.js and npm installed on your machine. If not, you can download and install them from [here](https://nodejs.org/en/download/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
 
-### `npm run build`
+1. Clone this repository to your local machine using `https://github.com/mikasteyn999/hangman.git`. You can do this by opening your terminal and typing: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    git clone https://github.com/mikasteyn999/hangman.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate into the cloned repository. In your terminal, type: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    cd hangman
 
-### `npm run eject`
+3. Install the dependencies. In your terminal, type: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the application. It will be available at `http://localhost:3000` in your browser. You can start the application by typing: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tech Stack
 
-## Learn More
+This application was built using the following technologies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js
+- JavaScript
+- CSS
